@@ -160,7 +160,7 @@ const app = createApp()
 app.use(i18n).mount('#app)
 ```
 
-vite-plugin-vue-i18n can use the vite (rollup) mechanism to import all locales at once, using the special identifier `@intlify/vite-plugin-vue-i18n/messages`, as the bellow:
+vite-plugin-vue-i18n can use the vite (rollup) mechanism to import all locales at once, using the special identifier `vite-plugin-vue-i18n/messages-generated`, as below:
 
 ```js
 import { createApp } from 'vue'
@@ -169,7 +169,7 @@ import { createI18n } from 'vue-i18n'
  * All i18n resources specified in the plugin `include` option can be loaded
  * at once using the import syntax
  */
-import messages from '@intlify/vite-plugin-vue-i18n/messages'
+import messages from 'vite-plugin-vue-i18n/messages-generated'
 
 const i18n = createI18n({
   locale: 'en',
@@ -182,7 +182,7 @@ app.use(i18n).mount('#app)
 
 ### Client Types
 
-If you want type definition of `@intlify/vite-plugin-vue-i18n/messages`, add `vite-plugin-vue-i18n/client` to `compilerOptions.types` of your tsconfig:
+If you want type definition of `vite-plugin-vue-i18n/messages-generated`, add `@intlify/vite-plugin-vue-i18n/client` to `compilerOptions.types` of your tsconfig:
 
 ```json
 {

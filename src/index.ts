@@ -24,7 +24,7 @@ import type { VitePluginVueI18nOptions } from './options'
 
 const debug = Debug('vite-plugin-vue-i18n')
 
-const INTLIFY_BUNDLE_IMPORT_ID = '@intlify/vite-plugin-vue-i18n/messages'
+const INTLIFY_BUNDLE_IMPORT_ID = 'vite-plugin-vue-i18n/messages-generated'
 
 function pluginI18n(
   options: VitePluginVueI18nOptions = { forceStringify: false }

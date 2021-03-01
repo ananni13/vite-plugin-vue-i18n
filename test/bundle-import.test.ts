@@ -9,7 +9,7 @@ const options = {
 
 test('import', async () => {
   const { exports: messages } = await bundleAndRun(
-    '@intlify/vite-plugin-vue-i18n/messages',
+    'vite-plugin-vue-i18n/messages-generated',
     options
   )
   ;['en', 'fr', 'ja', 'ko'].forEach(locale => {
